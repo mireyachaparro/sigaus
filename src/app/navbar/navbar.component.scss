@@ -1,0 +1,81 @@
+@use "variables";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+
+  .navbar--logo {
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    border-right: 2px solid variables.$grey-color;
+    padding-inline: 20px;
+    padding-block: 10px;
+    width: 7%;
+  }
+
+  .navbar--menu {
+    font-size: 13px;
+    font-weight: 700;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    a {
+      padding-inline: 10px;
+    }
+  }
+  .navbar--incidencias {
+    width: 12%;
+    font-size: 13px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    img {
+      margin-inline: 10px;
+    }
+  }
+
+  .navbar--perfil {
+    font-size: 13px;
+    font-weight: 700;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 12%;
+  }
+
+  .navbar--logout {
+    width: 3%;
+  }
+
+  a {
+    outline: none;
+    text-decoration: none;
+    padding: 2px 1px 0;
+  }
+
+  a:visited {
+    color: variables.$grey-color;
+  }
+
+  .navbar--menu {
+    a:focus {
+      border-bottom: 5px solid variables.$green-color;
+    }
+
+    a:hover {
+      border-bottom: 5px solid variables.$green-color;
+      color: black;
+    }
+
+    a:active {
+      color: variables.$grey-color;
+    }
+  }
+}
