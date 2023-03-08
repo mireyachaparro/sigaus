@@ -1,8 +1,9 @@
 <nav class="navbar">
-  <div class="navbar--logo">
-    <a class="button" routerLink="/">sigaus</a>
-    <img src="../../assets/icon.png" alt="logo" width="25px" />
-  </div>
+  <a class="button" routerLink="/">
+    <div class="navbar--logo">
+      sigaus <img src="../../assets/icon.png" alt="logo" width="25px" />
+    </div>
+  </a>
 
   <div class="navbar--menu">
     <a class="button" routerLink="/">INICIO</a>
@@ -19,7 +20,7 @@
       alt="Icono notificaciones"
       width="20px"
     />
-    <a class="button" routerLink="/informes">INCIDENCIAS</a>
+    <a class="button" routerLink="/">INCIDENCIAS</a>
     <img
       src="../../assets/graphic.png"
       alt="Grafico de incidencias"
@@ -28,11 +29,13 @@
   </div>
 
   <div class="navbar--perfil">
-    <img src="../../assets/profile.svg" alt="Icono perfil" width="16px" />
-    <a class="button" routerLink="/informes">PERFIL</a>
+    <img src="../../assets/profile.svg" alt="Icono perfil" width="20px" />
+    <a class="button" routerLink="/">PERFIL</a>
   </div>
 
   <div class="navbar--logout">
-    <img src="../../assets/logout.svg" alt="Icono logout" width="16px" />
+    <a class="button" routerLink="/"
+      ><img src="../../assets/logout.svg" alt="Icono logout" width="20px"
+    /></a>
   </div>
 </nav>
