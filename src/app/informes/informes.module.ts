@@ -1,12 +1,8 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-
-import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
 import { TableModule } from 'primeng/table';
+import { InformesComponent } from './informes.component';
+import { CheckboxModule } from 'primeng/checkbox';
 import { CalendarModule } from 'primeng/calendar';
 import { SliderModule } from 'primeng/slider';
 import { DialogModule } from 'primeng/dialog';
@@ -18,13 +14,12 @@ import { InputTextModule } from 'primeng/inputtext';
 import { ProgressBarModule } from 'primeng/progressbar';
 import { DropdownModule } from 'primeng/dropdown';
 import { FormsModule } from '@angular/forms';
-import { TabViewModule } from 'primeng/tabview';
-
 @NgModule({
-  declarations: [AppComponent, NavbarComponent],
+  declarations: [InformesComponent],
   imports: [
-    BrowserModule,
-    AppRoutingModule,
+    CommonModule,
+    TableModule,
+    CheckboxModule,
     TableModule,
     CalendarModule,
     SliderModule,
@@ -36,11 +31,7 @@ import { TabViewModule } from 'primeng/tabview';
     ToastModule,
     InputTextModule,
     ProgressBarModule,
-    HttpClientModule,
     FormsModule,
-    TabViewModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent],
 })
-export class AppModule {}
+export class InformesModule {}
