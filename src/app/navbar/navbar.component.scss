@@ -1,0 +1,132 @@
+@use "variables";
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  align-items: stretch;
+  box-shadow: rgb(120, 120, 120) 0px 10px 10px -10px;
+
+  .navbar--logo {
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    border-right: 2px solid variables.$border-color;
+    padding-inline: 20px;
+    padding-block: 10px;
+    position: inherit;
+  }
+
+  .navbar--menu {
+    font-size: 13px;
+    font-weight: 700;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    a {
+      padding-inline: 10px;
+    }
+    a:focus {
+      border-bottom: 5px solid variables.$green-color;
+    }
+
+    a:hover {
+      border-bottom: 5px solid variables.$green-color;
+      color: black;
+    }
+
+    a:active {
+      color: variables.$grey-color;
+    }
+  }
+  .navbar--incidencias {
+    font-size: 13px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-right: 2px solid variables.$border-color;
+    width: 12%;
+  }
+
+  .navbar--perfil {
+    font-size: 13px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8%;
+  }
+
+  .navbar--logout {
+    font-size: 13px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3%;
+    background-color: variables.$grey-color;
+  }
+
+  a {
+    outline: none;
+    text-decoration: none;
+  }
+
+  a:visited {
+    color: variables.$grey-color;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+
+    .navbar--logo {
+      font-size: 90%;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding-inline: 10px;
+    }
+
+    .navbar--menu {
+      font-size: 70%;
+      a {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+
+    .navbar--incidencias {
+      font-size: 70%;
+      border-right: hidden !important;
+      :nth-child(3) {
+        visibility: hidden !important;
+        width: 0;
+      }
+    }
+
+    .navbar--perfil {
+      width: 0;
+      visibility: hidden !important;
+    }
+
+    .navbar--logout {
+      width: 0;
+      visibility: hidden !important;
+    }
+  }
+}
