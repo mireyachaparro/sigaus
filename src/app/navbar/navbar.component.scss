@@ -30,6 +30,7 @@
     align-items: center;
     a {
       padding-inline: 10px;
+      color: variables.$grey-color;
     }
     a:focus {
       border-bottom: 5px solid variables.$green-color;
