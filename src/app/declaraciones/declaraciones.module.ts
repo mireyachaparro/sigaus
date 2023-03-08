@@ -1,15 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { DeclaracionesComponent } from './declaraciones.component';
-
-
+import { IntroComponent } from './intro/intro.component';
 
 @NgModule({
-  declarations: [
-    DeclaracionesComponent
-  ],
-  imports: [
-    CommonModule
-  ]
+  declarations: [IntroComponent],
+  imports: [CommonModule],
 })
-export class DeclaracionesModule { }
+export class DeclaracionesModule {}
