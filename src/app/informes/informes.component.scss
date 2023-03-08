@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
+@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://example.com/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local("Material Icons"), local("MaterialIcons-Regular"),
+    url(https://example.com/MaterialIcons-Regular.woff2) format("woff2"),
+    url(https://example.com/MaterialIcons-Regular.woff) format("woff"),
+    url(https://example.com/MaterialIcons-Regular.ttf) format("truetype");
+}
+
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px; /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
+.intro {
+  font-family: "Noto", sans-serif;
+  margin-inline: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  h1 {
+    font-size: 20px;
+  }
+  div:nth-child(1) {
+    width: 400px;
+    font-size: 13px;
+  }
+  div:nth-child(2) {
+    width: 120px;
+    border: 2px solid #e2e2e2;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 800;
+    padding: 5px;
+    p {
+      margin: 0;
+    }
+
+    div {
+      border: 0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      span:nth-child(1) {
+        margin-right: 5px;
+        font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+        color: #1677ab;
+      }
+      span:nth-child(2) {
+        color: #626968;
+        font-weight: 700;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.archivos {
+  font-family: "Noto", sans-serif;
+  margin-inline: 20%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  height: 30px;
+  span {
+    font-size: 16px;
+  }
+  a {
+    color: #b0b4b3;
+    outline: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 700;
+    padding-inline: 10px;
+    border-right: 2px solid #e2e2e2;
+  }
+  :nth-child(1) {
+    padding-left: 0;
+    margin: 0;
+  }
+}
+
+.declaraciones {
+  background-color: #f5f4f1;
+  font-family: "Noto", sans-serif;
+  margin-top: 10px;
+  height: 30px;
+  height: 80vh;
+  padding-top: 5px;
+  .filtrar {
+    background-color: #e7e6e3;
+    margin-inline: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    height: 50px;
+    div:nth-child(1) {
+      border-right: 3px solid white;
+      padding-inline: 10px;
+      p {
+        font-size: 13px;
+        font-weight: 700;
+        height: 5px;
+        display: flex;
+        align-items: center;
+      }
+    }
+    div:nth-child(2) {
+      border-right: 3px solid white;
+      padding-inline: 10px;
+      input {
+        border: 2px solid #ced4da;
+        height: 30px;
+        box-shadow: rgb(120, 120, 120) -10px 10px 10px -10px;
+      }
+    }
+    div:nth-child(3) {
+      border-right: 3px solid white;
+      padding-inline: 10px;
+      display: flex;
+      flex-direction: row;
+      div {
+        background-color: #f5f4f1;
+        margin-inline: 3px;
+        padding-inline: 5px;
+        height: 30px;
+        border: 0;
+        font-size: 12px;
+        font-weight: 700;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+    div:nth-child(4) {
+      padding-inline: 10px;
+      input {
+        border: 2px solid #ced4da;
+        height: 30px;
+        width: 100px;
+        box-shadow: rgb(120, 120, 120) -10px 10px 10px -10px;
+      }
+    }
+  }
+}
+
+.gestion {
+  display: flex;
+  flex-direction: row;
+  font-family: "Noto", sans-serif;
+  margin-inline: 20%;
+  margin-top: 10px;
+  div:nth-child(1) {
+    width: 200px;
+    p:nth-child(1) {
+      font-style: italic;
+      font-size: 12px;
+      margin: 0;
+      margin-bottom: 5px;
+    }
+    p:nth-child(2) {
+      font-style: italic;
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+  div:nth-child(2) {
+    background-color: white;
+    border: 2px solid #e2e2e2;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 200px;
+    p {
+      font-size: 12px;
+      font-weight: 700;
+      margin: 0;
+      margin: 0;
+    }
+    span:nth-child(2) {
+      font-size: 20px;
+    }
+    span:nth-child(3) {
+      font-size: 14px;
+    }
+  }
+  div:nth-child(3) {
+    background-color: white;
+    border: 2px solid #e2e2e2;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 150px;
+    p {
+      font-size: 12px;
+      font-weight: 700;
+      margin: 0;
+      width: 10px;
+      margin: 0;
+    }
+    span:nth-child(2) {
+      font-size: 20px;
+    }
+    span:nth-child(3) {
+      font-size: 14px;
+    }
+  }
+  a {
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    width: 200px;
+    margin: 0;
+  }
+}
+
+:host ::ng-deep {
+  .p-paginator {
+    .p-paginator-current {
+      margin-left: auto;
+    }
+  }
+
+  .p-progressbar {
+    height: 0.5rem;
+    background-color: #d8dadc;
+
+    .p-progressbar-value {
+      background-color: #607d8b;
+    }
+  }
+
+  .table-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .p-calendar .p-datepicker {
+    min-width: 25rem;
+
+    td {
+      font-weight: 400;
+    }
+  }
+
+  .p-datatable.p-datatable-customers {
+    .p-datatable-header {
+      padding: 1rem;
+      text-align: left;
+      font-size: 1.5rem;
+    }
+
+    .p-paginator {
+      padding: 1rem;
+    }
+
+    .p-datatable-thead > tr > th {
+      text-align: left;
+    }
+
+    .p-datatable-tbody > tr > td {
+      cursor: auto;
+    }
+
+    .p-dropdown-label:not(.p-placeholder) {
+      text-transform: uppercase;
+    }
+  }
+
+  /* Responsive */
+  .p-datatable-customers .p-datatable-tbody > tr > td .p-column-title {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  :host ::ng-deep {
+    .p-datatable {
+      &.p-datatable-customers {
+        .p-datatable-thead > tr > th,
+        .p-datatable-tfoot > tr > td {
+          display: none !important;
+        }
+
+        .p-datatable-tbody > tr {
+          border-bottom: 1px solid var(--layer-2);
+
+          > td {
+            text-align: left;
+            display: block;
+            border: 0 none !important;
+            width: 100% !important;
+            float: left;
+            clear: left;
+            border: 0 none;
+
+            .p-column-title {
+              padding: 0.4rem;
+              min-width: 30%;
+              display: inline-block;
+              margin: -0.4rem 1rem -0.4rem -0.4rem;
+              font-weight: bold;
+            }
+
+            .p-progressbar {
+              margin-top: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}
