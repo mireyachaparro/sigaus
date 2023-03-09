@@ -363,4 +363,54 @@ p-table {
 }
 
 @media screen and (max-width: 900px) {
+  .intro {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 20px;
+    .intro--title {
+      width: 380px;
+    }
+  }
+
+  .archivos {
+    margin-inline: 20px;
+  }
+
+  .declaraciones {
+    .filtrar {
+      margin-inline: 20px;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      height: max-content;
+      padding-block: 5px;
+      div {
+        margin-block: 5px;
+        border-style: 0;
+      }
+      div:first-child {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        display: none;
+      }
+      div:nth-child(2) {
+        border-style: none;
+        input {
+          width: 300px;
+        }
+      }
+      div:nth-child(3) {
+        border-style: none;
+      }
+      div:nth-child(4) {
+        input {
+          width: 300px;
+        }
+      }
+    }
+  }
+  .gestion {
+    margin-inline: 20px;
+  }
 }

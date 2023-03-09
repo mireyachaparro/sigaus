@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-// import { DeclaracionesModule } from './declaraciones/declaraciones.module';
+import { DeclaracionesComponent } from './declaraciones/declaraciones.component';
 // import { FinanciacionComponent } from './financiacion/financiacion.component';
 // import { IncidenciasComponent } from './incidencias/incidencias.component';
 import { InformesComponent } from './informes/informes.component';
@@ -9,7 +9,7 @@ import { InformesComponent } from './informes/informes.component';
 
 const routes: Routes = [
   // { path: '', component: InicioComponent },
-  // { path: 'declaraciones', component: DeclaracionesModule },
+  { path: 'declaraciones', component: DeclaracionesComponent },
   // { path: 'instalaciones', component: InstalacionesComponent },
   // { path: 'incidencias', component: IncidenciasComponent },
   // { path: 'financiacion', component: FinanciacionComponent },

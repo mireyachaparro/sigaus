@@ -20,10 +20,16 @@ import { PaginatorModule } from 'primeng/paginator';
 // import { DropdownModule } from 'primeng/dropdown';
 import { FormsModule } from '@angular/forms';
 import { InformesComponent } from './informes/informes.component';
+import { DeclaracionesComponent } from './declaraciones/declaraciones.component';
 // import { TabViewModule } from 'primeng/tabview';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent, InformesComponent],
+  declarations: [
+    AppComponent,
+    NavbarComponent,
+    InformesComponent,
+    DeclaracionesComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
