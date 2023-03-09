@@ -4,7 +4,7 @@ import { InicioComponent } from './inicio/inicio.component';
 import { DeclaracionesComponent } from './declaraciones/declaraciones.component';
 import { InstalacionesComponent } from './instalaciones/instalaciones.component';
 import { IncidenciasComponent } from './incidencias/incidencias.component';
-// import { FinanciacionComponent } from './financiacion/financiacion.component';
+import { FinanciacionComponent } from './financiacion/financiacion.component';
 // import { InformesComponent } from './informes/informes.component';
 
 const routes: Routes = [
@@ -12,7 +12,7 @@ const routes: Routes = [
   { path: 'declaraciones', component: DeclaracionesComponent },
   { path: 'instalaciones', component: InstalacionesComponent },
   { path: 'incidencias', component: IncidenciasComponent },
-  // { path: 'financiacion', component: FinanciacionComponent },
+  { path: 'financiacion', component: FinanciacionComponent },
   // { path: 'informes', component: InformesComponent },
   { path: '**', component: InicioComponent },
 ];
