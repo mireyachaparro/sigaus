@@ -114,7 +114,7 @@
   font-family: "Noto", sans-serif;
   margin-top: 10px;
   height: 30px;
-  height: 80vh;
+  height: 100vh;
   padding-top: 5px;
   .filtrar {
     background-color: #e7e6e3;
@@ -177,6 +177,8 @@
 .gestion {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   font-family: "Noto", sans-serif;
   margin-inline: 20%;
   margin-top: 10px;
@@ -210,9 +212,11 @@
     }
     span:nth-child(2) {
       font-size: 20px;
+      color: #a19279;
     }
     span:nth-child(3) {
       font-size: 14px;
+      color: #a19279;
     }
   }
   div:nth-child(3) {
@@ -232,17 +236,28 @@
     }
     span:nth-child(2) {
       font-size: 20px;
+      color: #a19279;
     }
     span:nth-child(3) {
       font-size: 14px;
+      color: #a19279;
     }
   }
   a {
-    padding: 5px;
-    display: flex;
-    flex-direction: row;
-    width: 200px;
-    margin: 0;
+    color: #1677ab;
+    div {
+      padding: 5px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      justify-content: end;
+      width: 280px;
+      margin: 0;
+      span {
+        text-decoration: none;
+        outline: none;
+      }
+    }
   }
 }
 
@@ -267,6 +282,7 @@
 
     .p-paginator {
       // padding: 1rem;
+      background-color: inherit;
       font-size: 12px;
       span {
         font-size: 12px;
@@ -289,50 +305,6 @@
       text-transform: uppercase;
     }
   }
-
-  /* Responsive */
-  .p-datatable-customers .p-datatable-tbody > tr > td .p-column-title {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 900px) {
-  :host ::ng-deep {
-    .p-datatable {
-      &.p-datatable-customers {
-        .p-datatable-thead > tr > th,
-        .p-datatable-tfoot > tr > td {
-          display: none !important;
-        }
-
-        .p-datatable-tbody > tr {
-          border-bottom: 1px solid var(--layer-2);
-
-          > td {
-            text-align: left;
-            display: block;
-            border: 0 none !important;
-            width: 100% !important;
-            float: left;
-            clear: left;
-            border: 0 none;
-
-            .p-column-title {
-              padding: 0.4rem;
-              min-width: 30%;
-              display: inline-block;
-              margin: -0.4rem 1rem -0.4rem -0.4rem;
-              font-weight: bold;
-            }
-
-            .p-progressbar {
-              margin-top: 0.5rem;
-            }
-          }
-        }
-      }
-    }
-  }
 }
 
 p-table {
@@ -340,7 +312,6 @@ p-table {
   flex-direction: row;
   justify-content: center;
   font-family: "Noto", sans-serif;
-  margin-inline: 5%;
   margin-top: 10px;
   th,
   tr,
@@ -389,4 +360,7 @@ p-table {
 .table--incidencias {
   display: flex;
   justify-content: space-around;
+}
+
+@media screen and (max-width: 900px) {
 }

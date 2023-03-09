@@ -7,6 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 
 import { HttpClientModule } from '@angular/common/http';
 import { TableModule } from 'primeng/table';
+import { PaginatorModule } from 'primeng/paginator';
 // import { CalendarModule } from 'primeng/calendar';
 // import { SliderModule } from 'primeng/slider';
 // import { DialogModule } from 'primeng/dialog';
@@ -27,6 +28,7 @@ import { InformesComponent } from './informes/informes.component';
     BrowserModule,
     AppRoutingModule,
     TableModule,
+    PaginatorModule,
     // CalendarModule,
     // SliderModule,
     // DialogModule,
