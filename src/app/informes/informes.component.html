@@ -22,6 +22,26 @@
   rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
 />
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+/>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+/>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+/>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+/>
+<link
+  rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
+/>
 
 <div class="intro">
   <div class="intro--title">
@@ -100,30 +120,93 @@
       </div></a
     >
   </div>
-  <table>
-    <thead>
+  <p-table
+    #dt
+    [value]="datos"
+    dataKey="id"
+    styleClass="p-datatable-customers"
+    [rowHover]="true"
+    [rows]="10"
+    [showCurrentPageReport]="true"
+    [rowsPerPageOptions]="[10, 25, 50]"
+    [paginator]="true"
+    currentPageReportTemplate="Mostrando {first} a {last} de {totalRecords} declaraciones"
+    [filterDelay]="0"
+  >
+    <ng-template pTemplate="header">
       <tr>
-        <th>ID</th>
-        <th>Nombre</th>
-        <th>País</th>
-        <th>Compañía</th>
-        <th>Fecha</th>
-        <th>Estado</th>
-        <th>Actividad</th>
-        <th>Representante</th>
+        <th>
+          <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
+        </th>
+        <th pSortableColumn="name">
+          Nº REFERENCIA<span class="material-symbols-outlined arrows">
+            sync_alt
+          </span>
+        </th>
+        <th pSortableColumn="country.name">
+          TIPO<span class="material-symbols-outlined arrows"> sync_alt </span>
+        </th>
+        <th pSortableColumn="representative.name">
+          CANTIDAD<span class="material-symbols-outlined arrows">
+            sync_alt
+          </span>
+        </th>
+        <th pSortableColumn="date">
+          ORIGEN (PROVINCIA)<span class="material-symbols-outlined arrows">
+            sync_alt
+          </span>
+        </th>
+        <th pSortableColumn="status">
+          FECHA<span class="material-symbols-outlined arrows"> sync_alt </span>
+        </th>
+        <th pSortableColumn="activity">
+          % OLEOSO<span class="material-symbols-outlined arrows">
+            sync_alt
+          </span>
+        </th>
+        <th pSortableColumn="activity">INCIDENCIA</th>
+        <th></th>
+        <th pSortableColumn="activity">ACCIONES</th>
       </tr>
-    </thead>
-    <tbody>
-      <tr *ngFor="let dato of datos">
-        <td>{{ dato.id }}</td>
-        <td>{{ dato.name }}</td>
-        <td>{{ dato.country.name }}</td>
-        <td>{{ dato.company }}</td>
-        <td>{{ dato.date }}</td>
-        <td>{{ dato.status }}</td>
-        <td>{{ dato.activity }}</td>
-        <td>{{ dato.representative.name }}</td>
+    </ng-template>
+
+    <ng-template pTemplate="body" let-dato>
+      <tr class="p-selectable-row">
+        <td>
+          <p-tableCheckbox [value]="dato"></p-tableCheckbox>
+        </td>
+        <td>
+          <span class="image-text">{{ dato.id }}</span>
+        </td>
+        <td>
+          <span class="image-text">{{ dato.tipo }}</span>
+        </td>
+        <td>
+          <span class="image-text">{{ dato.cantidad }}</span>
+        </td>
+        <td>
+          <span class="image-text">{{ dato.origen }}</span>
+        </td>
+        <td>
+          <span class="image-text">{{ dato.fecha }}</span>
+        </td>
+        <td>
+          <span class="image-text">{{ dato.oleoso }}</span>
+        </td>
+        <td>
+          <span class="material-symbols-outlined"> notifications_active </span
+          ><span class="image-text">{{ dato.incidencia.alert }}</span
+          ><span class="material-symbols-outlined"> update </span
+          ><span class="image-text">{{ dato.incidencia.history }}</span>
+        </td>
+        <td><span class="material-symbols-outlined"> draft </span>Ver PDF</td>
+        <td><span class="material-symbols-outlined"> more_vert </span></td>
       </tr>
-    </tbody>
-  </table>
+    </ng-template>
+    <ng-template pTemplate="emptymessage">
+      <tr>
+        <td colspan="8">No customers found.</td>
+      </tr>
+    </ng-template>
+  </p-table>
 </div>

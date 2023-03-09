@@ -1,13 +1,15 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import data from '../../assets/declaraciones.json';
-
+import { Component, OnInit } from '@angular/core';
+import { dataJSON } from '../informes/data';
 @Component({
   selector: 'app-informes',
   templateUrl: './informes.component.html',
   styleUrls: ['./informes.component.scss'],
 })
-export class InformesComponent {
-  datos: any = data.data;
+export class InformesComponent implements OnInit {
+  datos: any[] = [];
   constructor() {}
-  ngOnInit(): void {}
+
+  ngOnInit(): void {
+    this.datos = dataJSON;
+  }
 }
