@@ -1,6 +1,19 @@
 # Sigaus
 
-He utilizado SASS, BEM, HTML semantico
+1- Se creará un proyecto de angular en su última versión
+2- Se creará un básico sistema de rutas con las opciones que se pueden ver en las imágenes donde solo la página a maquetar (declaraciones) tendrá el contenido
+3- Se valorará la creación de componentes de angular con el objetivo de reutilizar código
+4- Se deberá usar para la maquetación archivos .scss (cuando creas el proyecto de angular escogerlo así) y se valorará el uso de las ventajas de este
+5- En la segunda imagen se ve el diseño en una resolución igual a menor a 900px de ancho, nos gustaría que así quedara en esa resolución.
+6- Una vez terminada la maquetación se subirá a Git Hub y nos compartirá el link para poder ver, se valorará tanto la calidad de lo que se envie como la rapidez, en ese orden
+
+Notas:
+
+- La imagen de SIGAUS ubicada en la esquina superior izquierda sustituirla por un texto
+- Los colores existen herramientas para conocerlos pero es algo que no tendremos en cuenta, pueden usar parecidos
+- Los iconos usados son de Google (https://fonts.google.com/icons)
+
+![picture](https://github.com/mireyachaparro/sigaus/tree/main/src/assets)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.3.
 
