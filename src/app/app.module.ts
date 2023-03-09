@@ -15,6 +15,7 @@ import { DeclaracionesComponent } from './declaraciones/declaraciones.component'
 import { InstalacionesComponent } from './instalaciones/instalaciones.component';
 import { IncidenciasComponent } from './incidencias/incidencias.component';
 import { FinanciacionComponent } from './financiacion/financiacion.component';
+import { InformesComponent } from './informes/informes.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { FinanciacionComponent } from './financiacion/financiacion.component';
     InstalacionesComponent,
     IncidenciasComponent,
     FinanciacionComponent,
+    InformesComponent,
   ],
   imports: [
     BrowserModule,
