@@ -348,9 +348,25 @@ p-table {
     font-size: 12px;
     padding: 5px;
   }
+  tr {
+    background-color: #f5f4f1;
+  }
+  tr:nth-child(odd) {
+    background-color: white;
+  }
   th {
     color: #a19279;
-    background-color: inherit;
+    background-color: #f5f4f1;
+  }
+  a:nth-child(1) {
+    text-decoration: none;
+    outline: none;
+    color: #1677ab;
+    font-weight: 800;
+    display: flex;
+    span:nth-child(1) {
+      font-size: 16px;
+    }
   }
 }
 .material-symbols-outlined {
@@ -359,4 +375,18 @@ p-table {
 }
 .arrows {
   transform: rotate(90deg);
+}
+.more {
+  color: #d3d3d3;
+  font-size: 16px;
+}
+.tipo,
+.cantidad,
+.oleoso {
+  display: flex;
+  justify-content: center;
+}
+.table--incidencias {
+  display: flex;
+  justify-content: space-around;
 }

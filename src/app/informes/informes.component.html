@@ -138,35 +138,35 @@
         <th>
           <p-tableHeaderCheckbox></p-tableHeaderCheckbox>
         </th>
-        <th pSortableColumn="name">
+        <th pSortableColumn="referencia">
           Nº REFERENCIA<span class="material-symbols-outlined arrows">
             sync_alt
           </span>
         </th>
-        <th pSortableColumn="country.name">
+        <th pSortableColumn="tipo">
           TIPO<span class="material-symbols-outlined arrows"> sync_alt </span>
         </th>
-        <th pSortableColumn="representative.name">
+        <th pSortableColumn="cantidad">
           CANTIDAD<span class="material-symbols-outlined arrows">
             sync_alt
           </span>
         </th>
-        <th pSortableColumn="date">
+        <th pSortableColumn="origen">
           ORIGEN (PROVINCIA)<span class="material-symbols-outlined arrows">
             sync_alt
           </span>
         </th>
-        <th pSortableColumn="status">
+        <th pSortableColumn="fecha">
           FECHA<span class="material-symbols-outlined arrows"> sync_alt </span>
         </th>
-        <th pSortableColumn="activity">
+        <th pSortableColumn="oleoso">
           % OLEOSO<span class="material-symbols-outlined arrows">
             sync_alt
           </span>
         </th>
-        <th pSortableColumn="activity">INCIDENCIA</th>
+        <th pSortableColumn="incidencia">INCIDENCIA</th>
         <th></th>
-        <th pSortableColumn="activity">ACCIONES</th>
+        <th pSortableColumn="acciones">ACCIONES</th>
       </tr>
     </ng-template>
 
@@ -176,31 +176,59 @@
           <p-tableCheckbox [value]="dato"></p-tableCheckbox>
         </td>
         <td>
-          <span class="image-text">{{ dato.id }}</span>
+          <div class="id">
+            <span class="image-text">{{ dato.id }}</span>
+          </div>
         </td>
         <td>
-          <span class="image-text">{{ dato.tipo }}</span>
+          <div class="tipo">
+            <span class="image-text">{{ dato.tipo }}</span>
+          </div>
         </td>
         <td>
-          <span class="image-text">{{ dato.cantidad }}</span>
+          <div class="cantidad">
+            <span class="image-text">{{ dato.cantidad }}</span>
+          </div>
         </td>
         <td>
-          <span class="image-text">{{ dato.origen }}</span>
+          <div class="origen">
+            <span class="image-text">{{ dato.origen }}</span>
+          </div>
         </td>
         <td>
-          <span class="image-text">{{ dato.fecha }}</span>
+          <div class="fecha">
+            <span class="image-text">{{ dato.fecha }}</span>
+          </div>
         </td>
         <td>
-          <span class="image-text">{{ dato.oleoso }}</span>
+          <div class="oleoso">
+            <span class="image-text">{{ dato.oleoso }}</span>
+          </div>
         </td>
         <td>
-          <span class="material-symbols-outlined"> notifications_active </span
-          ><span class="image-text">{{ dato.incidencia.alert }}</span
-          ><span class="material-symbols-outlined"> update </span
-          ><span class="image-text">{{ dato.incidencia.history }}</span>
+          <div class="table--incidencias">
+            <div>
+              <span class="material-symbols-outlined">
+                notifications_active </span
+              ><span class="image-text">{{ dato.incidencia.alert }}</span>
+            </div>
+            <div>
+              <span class="material-symbols-outlined"> update </span
+              ><span class="image-text">{{ dato.incidencia.history }}</span>
+            </div>
+          </div>
         </td>
-        <td><span class="material-symbols-outlined"> draft </span>Ver PDF</td>
-        <td><span class="material-symbols-outlined"> more_vert </span></td>
+        <td>
+          <a href="/informes"
+            ><span class="material-symbols-outlined"> draft </span
+            ><span>Ver PDF</span>
+          </a>
+        </td>
+        <td>
+          <a href="/informes">
+            <span class="material-symbols-outlined more"> more_vert </span>
+          </a>
+        </td>
       </tr>
     </ng-template>
     <ng-template pTemplate="emptymessage">
