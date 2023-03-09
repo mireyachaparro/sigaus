@@ -19,7 +19,7 @@ import { PaginatorModule } from 'primeng/paginator';
 // import { ProgressBarModule } from 'primeng/progressbar';
 // import { DropdownModule } from 'primeng/dropdown';
 import { FormsModule } from '@angular/forms';
-import { InformesComponent } from './informes/informes.component';
+// import { InformesComponent } from './informes/informes.component';
 import { DeclaracionesComponent } from './declaraciones/declaraciones.component';
 // import { TabViewModule } from 'primeng/tabview';
 
@@ -27,7 +27,7 @@ import { DeclaracionesComponent } from './declaraciones/declaraciones.component'
   declarations: [
     AppComponent,
     NavbarComponent,
-    InformesComponent,
+    // InformesComponent,
     DeclaracionesComponent,
   ],
   imports: [
