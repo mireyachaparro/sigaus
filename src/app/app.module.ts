@@ -13,6 +13,7 @@ import { FormsModule } from '@angular/forms';
 
 import { InicioComponent } from './inicio/inicio.component';
 import { DeclaracionesComponent } from './declaraciones/declaraciones.component';
+import { InstalacionesComponent } from './instalaciones/instalaciones.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { DeclaracionesComponent } from './declaraciones/declaraciones.component'
     // InformesComponent,
     InicioComponent,
     DeclaracionesComponent,
+    InstalacionesComponent,
   ],
   imports: [
     BrowserModule,
