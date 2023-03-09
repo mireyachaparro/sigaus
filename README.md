@@ -13,7 +13,7 @@ Notas:
 - Los colores existen herramientas para conocerlos pero es algo que no tendremos en cuenta, pueden usar parecidos
 - Los iconos usados son de Google (https://fonts.google.com/icons)
 
-![picture](https://github.com/mireyachaparro/sigaus/tree/main/src/assets)
+![picture](https://github.com/mireyachaparro/sigaus/tree/main/src/assets/Gráfico_pegado-3.png)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.3.
 
