@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&family=Poppins:wght@400;500;600;700;800;900&display=swap");
+
 @font-face {
   font-family: "Material Icons";
   font-style: normal;
@@ -34,7 +36,381 @@
   font-feature-settings: "liga";
 }
 
+.intro {
+  font-family: "Noto", sans-serif;
+  margin-inline: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  h1 {
+    font-size: 20px;
+  }
+  div:nth-child(1) {
+    width: 400px;
+    font-size: 13px;
+  }
+  div:nth-child(2) {
+    width: 120px;
+    border: 2px solid #e2e2e2;
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 800;
+    padding: 5px;
+    p {
+      margin: 0;
+    }
+
+    div {
+      border: 0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      span:nth-child(1) {
+        margin-right: 5px;
+        font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
+        color: #1677ab;
+      }
+      span:nth-child(2) {
+        color: #626968;
+        font-weight: 700;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.archivos {
+  font-family: "Noto", sans-serif;
+  margin-inline: 20%;
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+  height: 30px;
+  span {
+    font-size: 16px;
+  }
+  a {
+    color: #b0b4b3;
+    outline: none;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 700;
+    padding-inline: 10px;
+    border-right: 2px solid #e2e2e2;
+  }
+  :nth-child(1) {
+    padding-left: 0;
+    margin: 0;
+  }
+}
+
+.declaraciones {
+  background-color: #f5f4f1;
+  font-family: "Noto", sans-serif;
+  margin-top: 10px;
+  height: 30px;
+  height: 100vh;
+  padding-top: 5px;
+  .filtrar {
+    background-color: #e7e6e3;
+    margin-inline: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 10px;
+    height: 50px;
+    div:nth-child(1) {
+      border-right: 3px solid white;
+      padding-inline: 10px;
+      p {
+        font-size: 13px;
+        font-weight: 700;
+        height: 5px;
+        display: flex;
+        align-items: center;
+      }
+    }
+    div:nth-child(2) {
+      border-right: 3px solid white;
+      padding-inline: 10px;
+      input {
+        border: 2px solid #ced4da;
+        height: 30px;
+        box-shadow: rgb(120, 120, 120) -10px 10px 10px -10px;
+      }
+    }
+    div:nth-child(3) {
+      border-right: 3px solid white;
+      padding-inline: 10px;
+      display: flex;
+      flex-direction: row;
+      div {
+        background-color: #f5f4f1;
+        margin-inline: 3px;
+        padding-inline: 5px;
+        height: 30px;
+        border: 0;
+        font-size: 12px;
+        font-weight: 700;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+    }
+    div:nth-child(4) {
+      padding-inline: 10px;
+      input {
+        border: 2px solid #ced4da;
+        height: 30px;
+        width: 100px;
+        box-shadow: rgb(120, 120, 120) -10px 10px 10px -10px;
+      }
+    }
+  }
+}
+
+.gestion {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Noto", sans-serif;
+  margin-inline: 20%;
+  margin-top: 10px;
+  div:nth-child(1) {
+    width: 200px;
+    p:nth-child(1) {
+      font-style: italic;
+      font-size: 12px;
+      margin: 0;
+      margin-bottom: 5px;
+    }
+    p:nth-child(2) {
+      font-style: italic;
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+  div:nth-child(2) {
+    background-color: white;
+    border: 2px solid #e2e2e2;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 200px;
+    p {
+      font-size: 12px;
+      font-weight: 700;
+      margin: 0;
+      margin: 0;
+    }
+    span:nth-child(2) {
+      font-size: 20px;
+      color: #a19279;
+    }
+    span:nth-child(3) {
+      font-size: 14px;
+      color: #a19279;
+    }
+  }
+  div:nth-child(3) {
+    background-color: white;
+    border: 2px solid #e2e2e2;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 150px;
+    p {
+      font-size: 12px;
+      font-weight: 700;
+      margin: 0;
+      width: 10px;
+      margin: 0;
+    }
+    span:nth-child(2) {
+      font-size: 20px;
+      color: #a19279;
+    }
+    span:nth-child(3) {
+      font-size: 14px;
+      color: #a19279;
+    }
+  }
+  a {
+    color: #1677ab;
+    div {
+      padding: 5px;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      justify-content: end;
+      width: 280px;
+      margin: 0;
+      span {
+        text-decoration: none;
+        outline: none;
+      }
+    }
+  }
+}
+
+:host ::ng-deep {
+  .p-paginator {
+    .p-paginator-current {
+      margin-left: auto;
+    }
+  }
+
+  .table-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .p-datatable.p-datatable-customers {
+    .p-datatable-header {
+      padding: 1rem;
+      text-align: left;
+      font-size: 1.5rem;
+    }
+
+    .p-paginator {
+      // padding: 1rem;
+      background-color: inherit;
+      font-size: 12px;
+      span {
+        font-size: 12px;
+      }
+      button {
+        font-size: 12px;
+        width: 20px;
+      }
+    }
+
+    .p-datatable-thead > tr > th {
+      text-align: left;
+    }
+
+    .p-datatable-tbody > tr > td {
+      cursor: auto;
+    }
+
+    .p-dropdown-label:not(.p-placeholder) {
+      text-transform: uppercase;
+    }
+  }
+}
+
+p-table {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  font-family: "Noto", sans-serif;
+  margin-top: 10px;
+  th,
+  tr,
+  td {
+    font-size: 12px;
+    padding: 5px;
+  }
+  tr {
+    background-color: #f5f4f1;
+  }
+  tr:nth-child(odd) {
+    background-color: white;
+  }
+  th {
+    color: #a19279;
+    background-color: #f5f4f1;
+  }
+  a:nth-child(1) {
+    text-decoration: none;
+    outline: none;
+    color: #1677ab;
+    font-weight: 800;
+    display: flex;
+    span:nth-child(1) {
+      font-size: 16px;
+    }
+  }
+}
 .material-symbols-outlined {
   font-variation-settings: "FILL" 1, "wght" 400, "GRAD" 0, "opsz" 48;
-  color: #1677ab;
+  font-size: 12px;
+}
+.arrows {
+  transform: rotate(90deg);
+}
+.more {
+  color: #d3d3d3;
+  font-size: 16px;
+}
+.tipo,
+.cantidad,
+.oleoso {
+  display: flex;
+  justify-content: center;
+}
+.table--incidencias {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 900px) {
+  .intro {
+    display: flex;
+    justify-content: space-between;
+    margin-inline: 20px;
+    .intro--title {
+      width: 380px;
+    }
+  }
+
+  .archivos {
+    margin-inline: 20px;
+  }
+
+  .declaraciones {
+    .filtrar {
+      margin-inline: 20px;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+      height: max-content;
+      padding-block: 5px;
+      div {
+        margin-block: 5px;
+        border-style: 0;
+      }
+      div:first-child {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+        display: none;
+      }
+      div:nth-child(2) {
+        border-style: none;
+        input {
+          width: 300px;
+        }
+      }
+      div:nth-child(3) {
+        border-style: none;
+      }
+      div:nth-child(4) {
+        input {
+          width: 300px;
+        }
+      }
+    }
+  }
+  .gestion {
+    margin-inline: 20px;
+  }
 }
