@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { InicioComponent } from './inicio/inicio.component';
 import { DeclaracionesComponent } from './declaraciones/declaraciones.component';
 import { InstalacionesComponent } from './instalaciones/instalaciones.component';
+import { IncidenciasComponent } from './incidencias/incidencias.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { InstalacionesComponent } from './instalaciones/instalaciones.component'
     InicioComponent,
     DeclaracionesComponent,
     InstalacionesComponent,
+    IncidenciasComponent,
   ],
   imports: [
     BrowserModule,
