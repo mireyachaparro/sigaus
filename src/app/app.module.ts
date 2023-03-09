@@ -9,22 +9,22 @@ import { HttpClientModule } from '@angular/common/http';
 import { TableModule } from 'primeng/table';
 import { PaginatorModule } from 'primeng/paginator';
 import { FormsModule } from '@angular/forms';
-// import { InformesComponent } from './informes/informes.component';
 
 import { InicioComponent } from './inicio/inicio.component';
 import { DeclaracionesComponent } from './declaraciones/declaraciones.component';
 import { InstalacionesComponent } from './instalaciones/instalaciones.component';
 import { IncidenciasComponent } from './incidencias/incidencias.component';
+import { FinanciacionComponent } from './financiacion/financiacion.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    // InformesComponent,
     InicioComponent,
     DeclaracionesComponent,
     InstalacionesComponent,
     IncidenciasComponent,
+    FinanciacionComponent,
   ],
   imports: [
     BrowserModule,
